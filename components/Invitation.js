@@ -1,13 +1,13 @@
 const React = require('react');
 
-export default class Invitation extends React.Component {
-  render() {
-    return (
+class Invitation extends React.Component {
+  render(){
+    return(
       <div>
         <h1>You've been invited!</h1>
-        <p>{this.props.children}</p>
+        <div>{this.props.children}</div>
       </div>
-    );
+    )
   }
 }
 

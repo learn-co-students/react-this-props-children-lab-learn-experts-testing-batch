@@ -1,18 +1,18 @@
 const React = require('react');
 
-export default class ThemedDecorations extends React.Component {
-  render(){
+class ThemedDecorations extends React.Component {
 
-    const childrenWithClassName = React.Children.map(this.props.children, child => {
+  render(){
+    const customChildren = React.Children.map(this.props.children, child => {
       return (
         <div className="theme">{child}</div>
-      );
-    });
+      )
+    })
     return(
       <div>
-        {childrenWithClassName}
+        {customChildren}
       </div>
-    );
+    )
   }
 }
 
