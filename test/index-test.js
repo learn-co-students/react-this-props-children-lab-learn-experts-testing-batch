@@ -42,7 +42,7 @@ describe('<ThemedDecorations />', function () {
       wrapper
         .children()
         .map(element => element.prop('className'))
-        .every(prop => prop === 'heaven')
+        .every(prop => prop === 'theme')
     ).toBeTruthy();
   });
 });
